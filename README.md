@@ -1,2 +1,3 @@
-# water-IOT-monitoring
-water monitoring system using IOT
+# water-IOT-monitoring system
+
+npm run dev
