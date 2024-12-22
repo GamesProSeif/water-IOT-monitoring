@@ -1,0 +1,29 @@
+.settingsContainer h2, .settingsContainer td{
+  color: #fff;
+}
+  
+  .settingsContainer {
+    max-width: 800px;
+    border-radius: 15px;
+    padding: 20px;
+    background: #2E5077;
+    box-shadow: 2px 2px 10px gray;
+
+  }
+  
+  .settingsTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .settingsTable th,
+  .settingsTable td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .settingsTable th {
+    background-color: #f2f2f2;
+  }
