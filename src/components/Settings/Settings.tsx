@@ -1,20 +1,7 @@
-import React, { useEffect, useState } from "react";
-import { fetchSettings } from '../../services/api'; 
 import './styles.css';
+import { ISettings } from "../../types";
 
-const Settings = () => {
-  const [settings, setSettings] = useState<any>(null);
-
-  useEffect(() => {
-    const getSettings = async () => {
-      const data = await fetchSettings();
-      setSettings(data);
-    };
-    getSettings();
-  }, []);
-
-
-
+const Settings = ({ settings }: { settings: ISettings }) => {
   return (
     <div className="settingsContainer">
       <h2>Current Settings</h2>

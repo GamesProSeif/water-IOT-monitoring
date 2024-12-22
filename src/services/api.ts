@@ -1,10 +1,11 @@
 import axios from 'axios';
+import { ISettings } from '../types';
 
 const api = axios.create({
   baseURL: 'http://localhost:3000',
 });
 
-export const updateConfig = async (key: string, value: any) => {
+export const updateConfig = async (key: keyof ISettings, value: ISettings[keyof ISettings]) => {
   await api.post('/config', { key, value });
 };
 
