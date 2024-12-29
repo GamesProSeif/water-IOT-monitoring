@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { fetchTemperature } from '../../services/api';
 import  './styles.css';
 
@@ -11,6 +11,10 @@ const Temperature = () => {
       setTemp(temperature);
     };
     getTemp();
+
+    const intervalId = setInterval(getTemp, 3000);
+
+    return () => clearInterval(intervalId);
   }, []);
 
   return (
