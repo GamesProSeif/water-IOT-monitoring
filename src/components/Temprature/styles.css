@@ -1,0 +1,24 @@
+
+.tempContainer {
+    max-width: 500px;
+    /* margin: 50px auto;*/
+    padding: 40px;
+    background: #2E5077;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px gray;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.3s ease;
+    text-align: center;
+  }
+
+  .tempContainer h2 {
+    color: #ecf0f1;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+  }
+  
+  .tempContainer h3 {
+    font-size: 30px;
+    color: #ecf0f1;
+  }
